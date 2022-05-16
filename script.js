@@ -35,8 +35,22 @@ function validaCpf(cpf) {
   console.log(
     digitos.toString().charAt(1) + ' é a segunda posição da var digitos'
   )
-
+  ValidaCPF()
   return true
+}
+
+
+function ValidaCPF() {
+  var ao_cpf = document.getElementById('cpf_digitado').value
+  var cpfValido = /^(([0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}))$/
+  if (cpfValido.test(ao_cpf) == false) {
+    //alert("invalido");
+    var formattedCpf = ao_cpf
+      .toString()
+      .replace(/^(\d{3})\D*(\d{3})\D*(\d{3})\D*(\d{2})$/g, '$1.$2.$3-$4')
+    var valorValido = formattedCpf
+    document.getElementById('cpf_digitado').value = valorValido
+  }
 }
 
 function validacao() {
