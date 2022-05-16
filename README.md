@@ -5,7 +5,7 @@ Projeto desenvolvido durante o curso da #GamaAcademy na jornada da Hiring Coders
 
 ## Deploy
 
-https://css-project-hc-3.vercel.app/
+https://cpfvalidator.vercel.app/
 
 
 ## Autores
